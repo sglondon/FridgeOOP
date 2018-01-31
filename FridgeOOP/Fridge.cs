@@ -88,6 +88,67 @@ namespace FridgeOOP
         }
 
 
+        public string ChangeBulbs() //this method would need to be called with a Console.WriteLine()
+                                    //to display the message
+                                    //returns a string
+        {
+            if (bulbsWork == false)
+            {
+                bulbsWork = true;
+                return "The bulbs have been changed.";
+            }
+            else
+            {
+                return "The bulbs don't have to be changed.";
+            }
+        }
 
-    }
-}
+        public void RemoveFood(int foodRemoved)//doesn't return anything but does affect one of our fields
+        {
+            foodAmount -= foodRemoved; //decrement food amount by food removed
+                                        
+        }
+
+        public string CheckSupplies()
+        {
+            if (foodAmount >= 80)
+            {
+                return "fully stocked";
+            }
+            else if (foodAmount > 40)
+            {
+                return "getting low";
+            }
+            else return "time to grocery shop";
+        }
+
+        //public string Clean(bool isDirty) //isDirty would come from our program class
+        //{
+        //    if (isDirty)
+        //    {
+        //        isClean = true;
+        //        return "I cleaned the fridge";
+        //    }
+
+        //    else return "the fridge is already clean";
+        //}
+
+        public string Clean()
+        {
+            if (isClean == false)
+            {
+                isClean = true;
+                return "I cleaned the fridge";
+            }
+            else return "the fridge is already clean";
+            {
+
+            }
+
+
+            }
+            }
+        }
+
+    
+
