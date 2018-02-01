@@ -106,7 +106,7 @@ namespace FridgeOOP
         public void RemoveFood(int foodRemoved)//doesn't return anything but does affect one of our fields
         {
             foodAmount -= foodRemoved; //decrement food amount by food removed
-                                        
+        //    Console.WriteLine(foodAmount);                            
         }
 
         public string CheckSupplies()
